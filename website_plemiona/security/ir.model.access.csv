@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_world_world,access.world.world,model_world_world,base.group_user,1,1,1,1
+access_village_village,access.village.village,model_village_village,base.group_user,1,1,1,1

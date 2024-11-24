@@ -7,6 +7,8 @@
     'demo': [
     ],
     'data': [
+        'security/ir.model.access.csv',
+        'views/world_world_views.xml',
     ],
     'installable': True,
     'application': True,
