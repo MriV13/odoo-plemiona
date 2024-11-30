@@ -14,3 +14,12 @@
     'application': True,
     'license': 'LGPL-3',
 }
+{
+    'name': 'Village Management',
+    'version': '1.0',
+    'depends': ['base'],
+    'data': [
+        'views/village_views.xml',  # Add the path to your XML file
+    ],
+    'application': True,
+}
