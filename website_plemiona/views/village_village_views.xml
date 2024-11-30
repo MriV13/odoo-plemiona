@@ -1,0 +1,35 @@
+<odoo>
+    <!-- Tree View (List View) -->
+    <record id="view_village_tree" model="ir.ui.view">
+        <field name="name">village.village.tree</field>
+        <field name="model">village.village</field>
+        <field name="arch" type="xml">
+            <tree string="Villages">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_village_form" model="ir.ui.view">
+        <field name="name">village.village.form</field>
+        <field name="model">village.village</field>
+        <field name="arch" type="xml">
+            <form string="Village">
+                <group>
+                    <field name="name"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action for opening the view -->
+    <record id="action_village" model="ir.actions.act_window">
+        <field name="name">Villages</field>
+        <field name="res_model">village.village</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu Item to access the action -->
+    <menuitem id="menu_village" name="Villages" parent="base.menu_custom" action="action_village"/>
+</odoo>
